@@ -1,0 +1,71 @@
+.container {
+  width: 97vw;
+  height: 97vh;
+  margin: 1em auto;
+  background-size: cover;
+  font-family: "Teko", sans-serif;
+  background-image: url(../gal.jpg);
+}
+
+.container article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin: 0 auto;
+  height: 90%;
+  max-width: 1200px;
+}
+
+.container div {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container article h1 {
+  margin: auto 0;
+  letter-spacing: 3px;
+  font-size: 20vw;
+  padding-left: 0.05em;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    margin: 0 auto;
+  }
+  .container article h1 {
+    text-align: center;
+    font-size: 25vw;
+  }
+  .container div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    background-image: none;
+  }
+  .container div {
+    padding-top: 2em;
+  }
+  .container div button {
+    margin-left: 1em;
+    width: 100%;
+  }
+  .container article {
+    background-image: url(../gal.jpg);
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=Banner.module.css.map */

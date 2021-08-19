@@ -1,0 +1,72 @@
+.overlay {
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  z-index: 900;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.overlayOpen {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+.overlayClosed {
+  animation: fadeOut 0.5s ease-in forwards;
+}
+.spacing {
+  width: 100%;
+  height: 3em;
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: 0fr 1fr;
+  height: 100vh;
+  padding-right: 1em;
+  padding-left: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrapper a {
+  font-family: "Teko", sans-serif;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.wrapper article ul {
+  margin: 0;
+  padding: 0;
+}
+.wrapper article li {
+  border-bottom: 2px rgba(143, 143, 143, 0.555) solid;
+}
+.wrapper article,
+.wrapper article a {
+  align-self: center;
+  width: 100%;
+  text-align: right;
+  font-size: 5.2vh;
+}
+.wrapper article ul:hover a {
+  color: rgb(102, 102, 102);
+}
+.wrapper article ul a:hover {
+  color: rgb(255, 255, 255);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

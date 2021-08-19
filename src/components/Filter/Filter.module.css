@@ -1,0 +1,47 @@
+.filterContainer {
+  font-family: "Teko", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filterContainer div {
+  padding-right: 1em;
+}
+
+.filterContainer label {
+  font-size: 1.5rem;
+  color: #c5c3c3;
+}
+
+.filterContainer select {
+  cursor: pointer;
+  margin-left: 0.3em;
+  font-family: "Teko", sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: #020202 1.5px solid;
+}
+
+.filterContainer button {
+  margin-left: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .filterContainer {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .btnContainer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Filter.module.css.map */

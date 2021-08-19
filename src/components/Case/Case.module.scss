@@ -1,0 +1,55 @@
+.case {
+  font-family: "Teko", sans-serif;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  align-self: baseline;
+}
+.case h1 {
+  color: rgb(192, 192, 192);
+  font-weight: 300;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+.content {
+  color: rgb(5, 5, 5);
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  font-size: 1.5rem;
+}
+.case a {
+  text-decoration: none;
+}
+.case a div {
+  display: flex;
+  align-items: center;
+}
+.case a div p {
+  transition: all 0.5s;
+}
+.case img {
+  width: 100%;
+  height: 25vw;
+  transition: all 0.3s;
+}
+.case:hover {
+  cursor: pointer;
+  img {
+    transform: scale(0.95, 0.95);
+  }
+  div p {
+    transform: translateX(8px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .case {
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 100vw;
+  }
+  .case img {
+    width: 100%;
+    height: 100%;
+  }
+}

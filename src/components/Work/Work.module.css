@@ -1,0 +1,69 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1200px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: fadeColumn 0.5s ease forwards;
+          animation: fadeColumn 0.5s ease forwards;
+}
+
+.wrapper.wrapperRow {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: fadeRow 0.5s ease forwards;
+          animation: fadeRow 0.5s ease forwards;
+}
+
+@-webkit-keyframes fadeColumn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeColumn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeRow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeRow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .wrapper article a div {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Work.module.css.map */

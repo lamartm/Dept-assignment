@@ -1,0 +1,35 @@
+.filterContainer {
+  font-family: "Teko", sans-serif;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  justify-content: space-between;
+}
+.filterContainer div {
+  padding-right: 1em;
+}
+.filterContainer label {
+  font-size: 1.5rem;
+  color: rgb(197, 195, 195);
+}
+.filterContainer select {
+  cursor: pointer;
+  margin-left: 0.3em;
+  font-family: "Teko", sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: rgb(2, 2, 2) 1.5px solid;
+}
+.filterContainer button {
+  margin-left: 1em;
+}
+@media only screen and (max-width: 600px) {
+  .filterContainer {
+    justify-content: flex-end;
+  }
+  .btnContainer {
+    display: none;
+  }
+}

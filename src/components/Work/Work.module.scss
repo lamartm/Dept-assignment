@@ -1,0 +1,38 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1200px;
+  transition: all 0.5s;
+  animation: fadeColumn 0.5s ease forwards;
+}
+.wrapper.wrapperRow {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  transition: all 0.5s;
+  animation: fadeRow 0.5s ease forwards;
+}
+@keyframes fadeColumn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeRow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .wrapper article a div {
+    display: none;
+  }
+}
