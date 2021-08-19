@@ -38,7 +38,10 @@ const Header = () => {
     >
       <div className={styles.container}>
         <div className={wrapperClass.join(" ")}>
-          <h1>DEPT</h1>
+          <a href="https://www.deptagency.com/nl-nl/">
+            <h1>DEPT</h1>
+          </a>
+
           <button
             onClick={() => setOpen(!open)}
             className={btnClass.join(" ")}

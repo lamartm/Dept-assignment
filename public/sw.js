@@ -1,5 +1,5 @@
-const staticCache = "static-site-v2";
-const dynamicCache = "dynamic-cache-v2";
+const staticCache = "static-site-v3";
+const dynamicCache = "dynamic-cache-v3";
 const assets = [
   "images/adidas.svg",
   "images/axe.svg",

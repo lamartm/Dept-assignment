@@ -17,7 +17,12 @@
   margin: 0 auto;
 }
 
-.wrapper h1 {
+.wrapper a {
+  text-decoration: none;
+}
+
+.wrapper a h1 {
+  color: white;
   margin-bottom: auto;
   margin-top: auto;
   letter-spacing: 3px;
@@ -32,19 +37,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: white 2px solid;
 }
 
 .wrapper.wrapperOpen {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   border-bottom: transparent 2px solid;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.wrapper.wrapperOpen h1 {
+.wrapper.wrapperOpen a h1 {
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -96,12 +101,15 @@
   left: 0;
   z-index: 900;
   background-color: rgba(255, 255, 255, 0.938);
-  color: black;
   position: fixed;
   width: 100%;
   font-family: "Teko", sans-serif;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.secondHeader .wrapper a h1 {
+  color: black;
 }
 
 .secondHeader .wrapper {
