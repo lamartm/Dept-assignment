@@ -1,7 +1,7 @@
 # Installation guide
 
 Clone the repo:
-```https://github.com/lamartm/Dept-assignment.git```
+```https://github.com/lamartm/Ray-mockup-site.git```
 
 Navigate to this map and run the following command:
 ``` npm install ```
