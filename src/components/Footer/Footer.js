@@ -12,7 +12,7 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <article>
-            <h1>DEPT</h1>
+            <h1>RAY</h1>
             <ul>
               <li>WORK</li>
               <li>SERVICES</li>
@@ -35,11 +35,9 @@ const Footer = () => {
           </article>
           <article>
             <ul>
-              <li>Chamber of Commerce: 6346101</li>
-              <li>VAT: NL 8552.47.501.B01</li>
               <li>Term and conditions</li>
             </ul>
-            <p>2018 Dept Agency</p>
+            <p>2022 Ray Productions</p>
           </article>
         </div>
         <button onClick={scrollTop}>

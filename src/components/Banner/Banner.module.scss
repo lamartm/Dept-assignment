@@ -8,7 +8,7 @@ body {
   margin: 1em auto;
   background-size: cover;
   font-family: "Teko", sans-serif;
-  background-image: url(../gal.jpg);
+  background-image: url(../space.jpg);
 }
 .container article {
   display: grid;
@@ -27,7 +27,8 @@ body {
 .container article h1 {
   margin: auto 0;
   letter-spacing: 3px;
-  font-size: 20vw;
+  font-size: 15vw;
+  color: whitesmoke;
   padding-left: 0.05em;
   font-weight: 500;
 }
@@ -58,7 +59,7 @@ body {
     width: 100%;
   }
   .container article {
-    background-image: url(../gal.jpg);
+    background-image: url(../space.jpg);
     background-size: cover;
   }
 }

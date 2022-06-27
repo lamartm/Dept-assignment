@@ -10,7 +10,7 @@ const Filter = (props) => {
   };
   useEffect(() => {
     props.toggle(list);
-  }, [list]);
+  }, [list, props]);
 
   return (
     <div className={styles.filterContainer}>
@@ -18,7 +18,7 @@ const Filter = (props) => {
         <Btn>TOGGLE VIEW</Btn>
       </div>
       <div>
-        <label>Show me</label>
+        <p>Show me</p>
         <select value={props.selected} onChange={filterResponse}>
           <option value="all">all work</option>
           <option value="Culture">culture</option>

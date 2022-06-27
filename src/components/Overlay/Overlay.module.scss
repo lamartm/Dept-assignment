@@ -39,10 +39,8 @@
 .wrapper article li {
   border-bottom: 2px rgba(143, 143, 143, 0.555) solid;
 }
-.wrapper article,
-.wrapper article a {
-  align-self: center;
-  width: 100%;
+.wrapper article {
+  align-self: center; 
   text-align: right;
   font-size: 5.2vh;
 }

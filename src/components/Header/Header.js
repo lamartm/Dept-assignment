@@ -38,8 +38,8 @@ const Header = () => {
     >
       <div className={styles.container}>
         <div className={wrapperClass.join(" ")}>
-          <a href="https://www.deptagency.com/nl-nl/">
-            <h1>DEPT</h1>
+          <a href="/">
+            <h1>RAY</h1>
           </a>
 
           <button

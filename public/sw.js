@@ -1,5 +1,5 @@
-const staticCache = "static-site-v3";
-const dynamicCache = "dynamic-cache-v3";
+const staticCache = "static-site-v4";
+const dynamicCache = "dynamic-cache-v4";
 const assets = [
   "images/adidas.svg",
   "images/axe.svg",
@@ -14,7 +14,8 @@ const assets = [
   "images/up-arrow.svg",
   "/",
 ];
-self.addEventListener("install", (event) => {
+
+window.self.addEventListener("install", (event) => {
   console.log("service worker installed");
   event.waitUntil(
     caches.open(staticCache).then((cache) => {
@@ -24,21 +25,23 @@ self.addEventListener("install", (event) => {
   );
 });
 
-self.addEventListener("activate", (event) => {
-  // console.log('service worker activated')
+window.self.addEventListener("activate", (event) => {
+  console.log("service worker activated");
   event.waitUntil(
     caches.keys().then((keys) => {
       return Promise.all(
         keys
           .filter((key) => key !== staticCache && key !== dynamicCache)
-          .map((key) => caches.delete(key))
+          .map((key) => {
+            console.log("clearing old cache");
+            return caches.delete(key);
+          })
       );
     })
   );
 });
 
-self.addEventListener("fetch", (event) => {
-  // console.log("service worker fetch", event.request.url);
+window.self.addEventListener("fetch", (event) => {
   if (!(event.request.url.indexOf("http") === 0)) return;
   event.respondWith(
     caches.match(event.request).then((cacheRes) => {

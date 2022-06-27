@@ -1,7 +1,7 @@
 {
-  "name": "Dept site",
-  "short_name": "Dept",
-  "description": "Dept assignment!",
+  "name": "Ray site",
+  "short_name": "Ray",
+  "description": "Ray mockup site",
   "theme_color": "#000000",
   "background_color": "#000000",
   "display": "standalone",

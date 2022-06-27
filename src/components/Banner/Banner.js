@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <section className={styles.container}>
       <article>
-        <h1>WORK</h1>
+        <h1>INNOVATE</h1>
       </article>
       <div>
         <Btn>VIEW CASE</Btn>

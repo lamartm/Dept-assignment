@@ -18,31 +18,31 @@ const Module = (props) => {
         <article>
           <ul>
             <li>
-              <a href="https://www.deptagency.com/nl-nl/">HOME</a>
+              <a href="/">HOME</a>
             </li>
             <li>
-              <a href="https://www.deptagency.com/nl-nl/">WORK</a>
+              <a href="/">WORK</a>
             </li>
             <li>
-              <a href="https://www.deptagency.com/nl-nl/">ABOUT</a>
+              <a href="/">ABOUT</a>
             </li>
             <li>
-              <a href="https://www.deptagency.com/nl-nl/">SERVICES</a>
+              <a href="/">SERVICES</a>
             </li>
             <li>
-              <a href="https://www.deptagency.com/nl-nl/">PARTNERS</a>
+              <a href="/">PARTNERS</a>
             </li>
             <li>
-              <a href="https://www.deptagency.com/nl-nl/">STORIES</a>
+              <a href="/">STORIES</a>
             </li>
             <li>
-              <a href="https://www.deptagency.com/nl-nl/">VACANCIES</a>
+              <a href="/">VACANCIES</a>
             </li>
             <li>
-              <a href="https://www.deptagency.com/nl-nl/">EVENTS</a>
+              <a href="/">EVENTS</a>
             </li>
             <li>
-              <a href="https://www.deptagency.com/nl-nl/">CONTACT</a>
+              <a href="/">CONTACT</a>
             </li>
           </ul>
         </article>

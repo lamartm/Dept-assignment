@@ -52,12 +52,10 @@
   border-bottom: 2px rgba(143, 143, 143, 0.555) solid;
 }
 
-.wrapper article,
-.wrapper article a {
+.wrapper article {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 100%;
   text-align: right;
   font-size: 5.2vh;
 }
